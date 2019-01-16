@@ -8,6 +8,7 @@ import { AppMasthead } from './masthead/masthead.component';
 import { AppFooter } from './app-footer/app-footer.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { SkiplinksComponent } from './skiplinks/skiplinks.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServersComponent } from './servers/servers.component';
     AppMasthead,
     AppFooter,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    SkiplinksComponent
   ],
   imports: [
     BrowserModule,

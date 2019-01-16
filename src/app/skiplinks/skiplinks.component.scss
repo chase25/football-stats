@@ -1,0 +1,24 @@
+@import '../../sass/variables';
+
+.skiplinks {
+  height: 65px;
+  margin-top: -65px;
+  width: 100%;
+  a {
+    background: $primary;
+    color: $base;
+    display: block;
+    height: 65px;
+    outline: 0;
+    position: absolute;
+    padding: 20px 30px;
+    text-align: center;
+    top: -65px;
+    transition: top .3s;
+    width: 100%;
+    &:hover,
+    &:focus {
+      top: 0;
+    }
+  }
+}
