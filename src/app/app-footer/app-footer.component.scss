@@ -1,0 +1,17 @@
+@import '../../sass/variables';
+
+.page-footer {
+  border-top: 10px solid $primary;
+  width: 100%;
+
+  &__inner {
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: 30px 10px;
+  }
+  &--copyright {
+    color: $secondary;
+    font-size: $size-secondary;
+    text-align-last: auto;
+  }
+}

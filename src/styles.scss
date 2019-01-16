@@ -1,21 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-  box-sizing: border-box;
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  font: 100% Arial, Helvetica, sans-serif;
-}
-a {
-  color: #008080;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    color: #000;
-    text-decoration: underline;
-  }
-}
+@import 'sass/variables';
+@import 'sass/base';
+
 .primary-container {
   background: #fff;
   margin: 0 auto;
@@ -23,18 +8,15 @@ a {
   padding: 20px;
   width: 100%;
 }
-h1, h2, h3, h4 {
-  font-weight: normal;
-  color: #008080;
-}
-p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-ul {
-  margin-bottom: 10px;
-  li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+.example-table {
+  width: 100%;
+  tr:nth-child(odd) {
+    td {
+      background: #edf1ff;
+    }
+  }
+  th, td {
+    padding: 5px 10px;
+    text-align: left;
   }
 }
