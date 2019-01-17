@@ -9,6 +9,8 @@ import { AppFooter } from './app-footer/app-footer.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { SkiplinksComponent } from './skiplinks/skiplinks.component';
+import { PrimaryNavComponent } from './primary-nav/primary-nav.component';
+import { SecondaryNavComponent } from './secondary-nav/secondary-nav.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { SkiplinksComponent } from './skiplinks/skiplinks.component';
     AppFooter,
     ServerComponent,
     ServersComponent,
-    SkiplinksComponent
+    SkiplinksComponent,
+    PrimaryNavComponent,
+    SecondaryNavComponent
   ],
   imports: [
     BrowserModule,

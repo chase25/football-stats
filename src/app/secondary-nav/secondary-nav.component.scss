@@ -1,0 +1,111 @@
+@import '../../sass/variables';
+
+.secondary-nav {
+
+  &--trigger {
+    background: $primary;
+    border: 0;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    &:hover,
+    &:focus {
+      background: $secondary;
+    }
+    i {
+      color: $base;
+      font-size: 1rem;
+    }
+  }
+  &--trigger-alt {
+    background: $secondary;
+    border: 0;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    &:hover,
+    &:focus {
+      background: $tertiary;
+      i {
+        color: $primary;
+      }
+    }
+    i {
+      color: $base;
+      font-size: 1rem;
+    }
+  }
+  &--list {
+    background: $primary;
+    bottom: 0;
+    list-style: none;
+    margin: 0;
+    max-width: 320px;
+    overflow: auto;
+    -webkit-overflow-touch: auto;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    width: 100%;
+    z-index: 10;
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+  &--links {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      display: block;
+      font-size: $size-secondary;
+      font-weight: $weight-bold;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: $base;
+      display: block;
+      padding: 10px;
+      position: relative;
+      &:after {
+        background: $tertiary;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: -100%;
+        position: absolute;
+        transition: left .3s;
+        width: 100%;
+      }
+      &:hover,
+      &:focus {
+        background: $secondary;
+        color: $base;
+        text-decoration: none;
+        &:after {
+          left: 0;
+        }
+      }
+    }
+  }
+  &--heading {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    a {
+      color: $base;
+      display: block;
+      padding: 15px 10px;
+    }
+  }
+}

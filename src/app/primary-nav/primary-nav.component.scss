@@ -1,0 +1,36 @@
+@import '../../sass/variables';
+
+.primary-nav {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+    &--list {
+      list-style: none;
+      margin: 0;
+      padding: 20px 0 20px 0;
+      &:after {
+        content: "";
+        display: block;
+        visibility: hidden;
+      }
+      li {
+        display: block;
+        float: left;
+      }
+      a {
+        color: $primary;
+        display: block;
+        overflow: hidden;
+        font-weight: $weight-bold;
+        padding: 5px 10px;
+        position: relative;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          color: $secondary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
