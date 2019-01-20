@@ -11,6 +11,7 @@ import { ServersComponent } from './servers/servers.component';
 import { SkiplinksComponent } from './skiplinks/skiplinks.component';
 import { PrimaryNavComponent } from './primary-nav/primary-nav.component';
 import { SecondaryNavComponent } from './secondary-nav/secondary-nav.component';
+import { DefaultLeagueTableComponent } from './default-league-table/default-league-table.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SecondaryNavComponent } from './secondary-nav/secondary-nav.component';
     ServersComponent,
     SkiplinksComponent,
     PrimaryNavComponent,
-    SecondaryNavComponent
+    SecondaryNavComponent,
+    DefaultLeagueTableComponent
   ],
   imports: [
     BrowserModule,
