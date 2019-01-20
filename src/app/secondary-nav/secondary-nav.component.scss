@@ -48,7 +48,7 @@
     max-width: 320px;
     overflow: auto;
     -webkit-overflow-touch: auto;
-    padding: 0;
+    padding: 50px 0 0 0;
     position: fixed;
     right: 0;
     top: 0;
@@ -99,14 +99,10 @@
     }
   }
   &--heading {
+    color: $base;
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 15px 10px;
     width: 100%;
-    a {
-      color: $base;
-      display: block;
-      padding: 15px 10px;
-    }
   }
 }
