@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Http, Response } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppMasthead } from './masthead/masthead.component';
@@ -26,8 +26,7 @@ import { SecondaryNavComponent } from './secondary-nav/secondary-nav.component';
   imports: [
     BrowserModule,
     FormsModule,
-    Http,
-    Response
+    HttpModule
   ],
   providers: [AppComponent],
   bootstrap: [AppComponent]
