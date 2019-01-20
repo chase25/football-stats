@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondaryNavComponent implements OnInit {
 
+  menuStatus = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onMenuToggle() {
+    this.menuStatus = true;
   }
 
 }
