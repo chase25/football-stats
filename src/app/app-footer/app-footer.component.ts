@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-footer.component.scss']
 })
 export class AppFooter {
+  today: Number = Date.now();
 
+  constructor (
+
+  )
 }
