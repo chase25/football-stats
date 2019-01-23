@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppFooter {
   today: Number = Date.now();
 
-  constructor (
-
-  )
+  constructor () {
+    
+  }
 }
