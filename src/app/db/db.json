@@ -1,0 +1,132 @@
+{
+  "navigation": [
+    {
+      "Primary": [
+        {
+          "title": "Fixtures",
+          "url": "/fixtures",
+        },
+        {
+          "title": "Teams",
+          "url": "/teams",
+        },
+        {
+          "title": "Form",
+          "url": "/form",
+        },
+        {
+          "title": "Top Scorers",
+          "url": "/top-scorers",
+        }
+      ],
+      "Secondary": [
+        {
+          "title": "Arsenal",
+          "url": "/arsenal"
+        },
+        {
+          "title": "Bournmouth",
+          "url": "/bournmouth"
+        },
+        {
+          "title": "Brighton and Hove Albion",
+          "url": "/brighton"
+        },
+        {
+          "title": "Burnley",
+          "url": "/burnley"
+        },
+        {
+          "title": "Cardiff City",
+          "url": "/cardiff"
+        },
+        {
+          "title": "Chelsea",
+          "url": "/chelsea"
+        },
+        {
+          "title": "Crystal Palace",
+          "url": "/crystal-palace"
+        },
+        {
+          "title": "Everton",
+          "url": "/everton"
+        },
+        {
+          "title": "Fulham",
+          "url": "/fulham"
+        },
+        {
+          "title": "Huddersfield Town",
+          "url": "/huddersfield"
+        },
+        {
+          "title": "Leicester City",
+          "url": "/leicester"
+        },
+        {
+          "title": "Liverpool",
+          "url": "/liverpool"
+        },
+        {
+          "title": "Manchester City",
+          "url": "/manchester-city"
+        },
+        {
+          "title": "Manchester Utd",
+          "url": "/manchester-unied"
+        },
+        {
+          "title": "Newcastle United",
+          "url": "/newcastle"
+        },
+        {
+          "title": "Southampton",
+          "url": "/southampton"
+        },
+        {
+          "title": "Tottnham Hotspur",
+          "url": "/totenham"
+        },
+        {
+          "title": "Watford",
+          "url": "/watford"
+        },
+        {
+          "title": "West Ham United",
+          "url": "/west-ham"
+        },
+        {
+          "title": "Wolverhampton Wanderers",
+          "url": "/wolves"
+      },
+      ],
+      "Utility": [
+        {
+          "url": "/top-scorers",
+          "title": "Top Scorers"
+        },
+        {
+          "url": "/most-assists",
+          "title": "Most Assists"
+        },
+        {
+          "url": "/most-cleansheets",
+          "title": "Most cleansheets"
+        },
+        {
+          "url": "/most-red-cards",
+          "title": "Most red cards"
+        },
+        {
+          "url": "/most-yellow-cards",
+          "title": "Most yellow cards"
+        },
+        {
+          "url": "/most-own-goals",
+          "title": "Most own goals"
+        },
+      ]
+    }
+  ]
+}
