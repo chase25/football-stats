@@ -15,11 +15,7 @@ export class SecondaryNavComponent implements OnInit {
   }
 
   onMenuToggle() {
-    if (this.menuStatus === true) {
-      this.menuStatus = false;
-    } else {
-      this.menuStatus = true;
-    }
+    this.menuStatus = !this.menuStatus;
   }
 
 }
