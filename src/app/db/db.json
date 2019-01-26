@@ -4,19 +4,19 @@
       "Primary": [
         {
           "title": "Fixtures",
-          "url": "/fixtures",
+          "url": "/fixtures"
         },
         {
           "title": "Teams",
-          "url": "/teams",
+          "url": "/teams"
         },
         {
           "title": "Form",
-          "url": "/form",
+          "url": "/form"
         },
         {
           "title": "Top Scorers",
-          "url": "/top-scorers",
+          "url": "/top-scorers"
         }
       ],
       "Secondary": [
@@ -99,7 +99,7 @@
         {
           "title": "Wolverhampton Wanderers",
           "url": "/wolves"
-      },
+        }
       ],
       "Utility": [
         {
@@ -125,7 +125,7 @@
         {
           "url": "/most-own-goals",
           "title": "Most own goals"
-        },
+        }
       ]
     }
   ]
