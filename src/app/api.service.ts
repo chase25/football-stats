@@ -5,10 +5,10 @@ import { catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
-	headers: new HttpHeaders({ 'X-Mashape-Key': 'GMLlN1s0zXmshKxCkCevzTFOUpk3p1229zZjsnHz11QbXPP3GT' })
+	headers: new HttpHeaders({ 'Accept': 'application/json' })
 };
 
-const headers = new HttpHeaders().set("Accept", "application/json");
+const headers = new HttpHeaders().set("X-Mashape-Key", "GMLlN1s0zXmshKxCkCevzTFOUpk3p1229zZjsnHz11QbXPP3GT");
 
 @Injectable({
 	providedIn: 'root'
