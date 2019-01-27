@@ -12,8 +12,9 @@ import { AppFooter } from './components/app-footer/app-footer.component';
 import { SkiplinksComponent } from './components/skiplinks/skiplinks.component';
 import { PrimaryNavComponent } from './components/primary-nav/primary-nav.component';
 import { SecondaryNavComponent } from './components/secondary-nav/secondary-nav.component';
-import { DefaultLeagueTableComponent } from './components/default-league-table/default-league-table.component';
+import { DefaultLeagueTableComponent } from './components/league-table/league-table.component';
 import { AppRouter } from './app-router';
+import { TeamsComponent } from './components/teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AppRouter } from './app-router';
     SkiplinksComponent,
     PrimaryNavComponent,
     SecondaryNavComponent,
-    DefaultLeagueTableComponent
+    DefaultLeagueTableComponent,
+    TeamsComponent
   ],
   imports: [
     AppRouter,

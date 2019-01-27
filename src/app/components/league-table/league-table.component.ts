@@ -1,11 +1,11 @@
-import { DataSet } from './../../dataset';
-import { ApiService } from './../../api.service';
+import { DataSet } from '../../dataset';
+import { ApiService } from '../../api.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-default-league-table',
-  templateUrl: './default-league-table.component.html',
-  styleUrls: ['./default-league-table.component.scss']
+  selector: 'app-league-table',
+  templateUrl: './league-table.component.html',
+  styleUrls: ['./league-table.component.scss']
 })
 export class DefaultLeagueTableComponent implements OnInit {
 
