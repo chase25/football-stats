@@ -13,7 +13,7 @@ import { SkiplinksComponent } from './components/skiplinks/skiplinks.component';
 import { PrimaryNavComponent } from './components/primary-nav/primary-nav.component';
 import { SecondaryNavComponent } from './components/secondary-nav/secondary-nav.component';
 import { DefaultLeagueTableComponent } from './components/default-league-table/default-league-table.component';
-import { AppRouter } from './app.router.component';
+import { AppRouter } from './app-router';
 
 @NgModule({
   declarations: [
