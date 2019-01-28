@@ -4,12 +4,6 @@ import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const httpOptions = {
-	headers: new HttpHeaders({ 'Accept': 'application/json' })
-};
-
-const headers = new HttpHeaders().set("X-Mashape-Key", "GMLlN1s0zXmshKxCkCevzTFOUpk3p1229zZjsnHz11QbXPP3GT");
-
 @Injectable({
 	providedIn: 'root'
 })
@@ -27,7 +21,11 @@ export class ApiService {
 	 * @method getAllContent - Gets the list of Fixtures from the server
 	 */
 	getAllContent(content): Observable<DataSet[]> {
-		return this.http.get<DataSet[]>(`${this.apiURL}/${content}`);
+		const httpOptions = {
+			headers: new HttpHeaders({ 'X-Mashape-Key': 'GMLlN1s0zXmshKxCkCevzTFOUpk3p1229zZjsnHz11QbXPP3GT' })
+		};
+
+		return this.http.get<DataSet[]>(`${this.apiURL}/${content}`, httpOptions);
 	}
 
 	/**
@@ -41,11 +39,7 @@ export class ApiService {
 			catchError(this.handleError<DataSet>(`getContent id=${id}`))
 		);
 	}
-	/**
-	 * Handle Http patch
-	 * @method updateContent - creates a new League and passes the the server
-	 * @param ContentDetail - passes the values from the entry form to the http request
-	 */
+
 	updateContent(ContentDetail, content: string) {
 		console.log(ContentDetail.id);
 		return this.http.patch(`${this.apiURL}/${content}/${ContentDetail.id}`, ContentDetail).pipe(
@@ -53,11 +47,7 @@ export class ApiService {
 		)
 
 	}
-	/**
-	 * Handle Http post
-	 * @method newContent - creates a new League and passes the the server
-	 * @param ContentDetail - passes the values from the entry form to the http request
-	 */
+	
 	newContent(ContentDetail, content) {
 		console.log(ContentDetail);
 		return this.http.post(this.apiURL, ContentDetail).pipe(
@@ -66,25 +56,6 @@ export class ApiService {
 		)
 
 	}
-
-	/**
-	 * Handle Http delete
-	 * @param targetRow - passes the id of the slected row and deletes from the server
-	 */
-	doDelete(targetRow: number) {
-		console.log(targetRow);
-		let apiRoot: string = `${this.apiURL}${targetRow}`;
-		//Deletes' the row with the given ID then call the getdata method
-		return this.http.delete(apiRoot).subscribe();
-
-	}
-
-	/**
-	 * Handle Http operation that failed.
-	 * Let the app continue.
-	 * @param operation - name of the operation that failed
-	 * @param result - optional value to return as the observable result
-	 */
 
 	private handleError<T>(operation = 'operation', result?: T) {
 		return (error: any): Observable<T> => {
