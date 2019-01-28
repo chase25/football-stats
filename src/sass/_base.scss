@@ -38,3 +38,21 @@ ul {
   position: absolute;
   top: -9999px;
 }
+.loader {
+	z-index: 1000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	.fa-spinner {
+		font-size: 60px;
+		color: #fff;
+		position: absolute;
+		top: 200px;
+		margin-top: -30px;
+		margin-left: -30px;
+	}
+}

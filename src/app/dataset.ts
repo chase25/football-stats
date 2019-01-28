@@ -1,11 +1,11 @@
 export class DataSet {
-	teamNameteam: string
-	matchsPlayed: number
-	wion: number
 	draw: number
-	lose: number
-	goalsFor: number
 	goalsAgainst: number
 	goalsDiff: number
+	goalsFor: number
+	lose: number
+	matchsPlayed: number
 	points: number
+	teamNameteam: string
+	win: number
 }

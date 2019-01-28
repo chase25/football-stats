@@ -1,14 +1,25 @@
 import { Injectable } from '@angular/core';
-import { DataSet } from './dataset';
+// import { DataSet } from './dataset';
 import { Observable, of } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
+import { catchError, tap, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
-	headers: new HttpHeaders({ 'Accept': 'application/json' })
+	headers: new HttpHeaders({ 'X-Mashape-Key': 'GMLlN1s0zXmshKxCkCevzTFOUpk3p1229zZjsnHz11QbXPP3GT' })
 };
 
-const headers = new HttpHeaders().set("X-Mashape-Key", "GMLlN1s0zXmshKxCkCevzTFOUpk3p1229zZjsnHz11QbXPP3GT");
+
+export class DataSet {
+	draw: number
+	goalsAgainst: number
+	goalsDiff: number
+	goalsFor: number
+	lose: number
+	matchsPlayed: number
+	points: number
+	teamNameteam: string
+	win: number
+}
 
 @Injectable({
 	providedIn: 'root'
@@ -26,8 +37,9 @@ export class ApiService {
 	 * Handle Http get
 	 * @method getAllContent - Gets the list of Fixtures from the server
 	 */
-	getAllContent(content): Observable<DataSet[]> {
-		return this.http.get<DataSet[]>(`${this.apiURL}/${content}`);
+	getAllContent(content): Observable<any> {
+		return this.http.get<any>(`${this.apiURL}/${content}`, httpOptions);
+
 	}
 
 	/**

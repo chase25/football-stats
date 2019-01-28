@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppMasthead {
 
+	title: string ='Premier League Stats'
+
 }
