@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of table; let i = index">
+    <tr *ngFor="let data of leagues; let i = index">
       <td>{{ i + 1 }}</td>
       <td>{{ data.teamName }}</td>
       <td>{{ data.matchsPlayed }}</td>
@@ -28,3 +28,7 @@
     </tr>
   </tbody>
 </table>
+
+<div class="loader" *ngIf="loader">
+	<i class="fas fa-spinner fa-spin"></i>
+</div>
