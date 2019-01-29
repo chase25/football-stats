@@ -1,6 +1,25 @@
 // Widths
 $max-width: 1300px;
 
+// Breakpoints
+$xsmall: 'min-width: 23.750em'; // 380px
+$small: 'min-width: 30em'; // 480px
+$medium: 'min-width: 48em'; // 768px
+$large: 'min-width: 60em'; // 960px
+$xlarge: 'min-width: 71.875em'; // 1150px
+$xxlarge: 'min-width: 81.25em'; // 1300px
+$small-only: 'max-width: 29.938em'; // 479px
+$medium-only: 'max-width: 42.250em'; // 767px
+
+// Grid
+$columns: 12;
+$grid-width: 100%;
+$max-width: $max-width;
+$default-gutter: 5px;
+$mobile-gutter: 5px;
+$tablet-gutter: 8px;
+$desktop-gutter: 10px;
+
 // Colors
 $base: #fff;
 $base-alt: #000;

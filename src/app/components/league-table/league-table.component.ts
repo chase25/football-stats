@@ -25,7 +25,7 @@ export class DefaultLeagueTableComponent implements OnInit {
 		private apiService: ApiService
 	) { }
 
-  ngOnInit() {
+  	ngOnInit() {
 		this.getAllContent();
 	}
 
