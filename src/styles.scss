@@ -13,15 +13,3 @@
   padding: 20px;
   width: 100%;
 }
-.example-table {
-  width: 100%;
-  tr:nth-child(odd) {
-    td {
-      background: #edf1ff;
-    }
-  }
-  th, td {
-    padding: 5px 10px;
-    text-align: left;
-  }
-}

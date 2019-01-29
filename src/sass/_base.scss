@@ -38,6 +38,21 @@ ul {
   position: absolute;
   top: -9999px;
 }
+table {
+  width: 100%;
+
+  tr:nth-child(odd) {
+    td {
+      background: #edf1ff;
+    }
+  }
+
+  th,
+  td {
+    padding: 5px 10px;
+    text-align: left;
+  }
+}
 .loader {
 	z-index: 1000;
 	position: absolute;
