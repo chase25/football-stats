@@ -10,17 +10,17 @@ html, body {
   font: 100% $font-primary;
 }
 a {
-  color: #008080;
+  color: $secondary;
   text-decoration: none;
   &:hover,
   &:focus {
-    color: #000;
+    color: $primary;
     text-decoration: underline;
   }
 }
 h1, h2, h3, h4 {
   font-weight: normal;
-  color: #008080;
+  color: $primary;
 }
 p {
   font-size: 1rem;
@@ -43,7 +43,7 @@ table {
 
   tr:nth-child(odd) {
     td {
-      background: #edf1ff;
+      background: $base;
     }
   }
 
