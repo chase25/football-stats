@@ -1,0 +1,50 @@
+@import '../../../sass/variables';
+
+.teams-list {
+    list-style: none;
+    
+    &:after {
+        content: "";
+        display: block;
+        visibility: hidden;
+    }
+    li {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+    a {
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        background-size: 75%;
+        border: 5px solid $primary;
+        border-radius: 10px;
+        color: $secondary;
+        display: block;
+        font-weight: $weight-bold;
+        height: 100%;
+        padding: 130px 20px 20px 20px;
+        transition: background-size .3s, border-color .3s;
+
+        &:hover,
+        &:focus {
+            background-size: 78%;
+            border-color: $secondary;
+            color: $primary;
+        }
+    }
+    img {
+        display: block;
+        max-width: 75%;
+        margin: 0 auto 20px;
+    }
+    @media screen and ($medium) {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 1;
+            min-width: 20%;
+        }
+    }
+}
