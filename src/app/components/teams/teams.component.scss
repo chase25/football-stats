@@ -2,6 +2,8 @@
 
 .teams-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
     
     &:after {
         content: "";
@@ -10,13 +12,13 @@
     }
     li {
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 10px 0 0;
         text-align: center;
     }
     a {
         background-position: center 10px;
         background-repeat: no-repeat;
-        background-size: 75%;
+        background-size: 110px;
         border: 5px solid $primary;
         border-radius: 10px;
         color: $secondary;
@@ -28,15 +30,10 @@
 
         &:hover,
         &:focus {
-            background-size: 78%;
+            background-size: 120px;
             border-color: $secondary;
             color: $primary;
         }
-    }
-    img {
-        display: block;
-        max-width: 75%;
-        margin: 0 auto 20px;
     }
     @media screen and ($medium) {
         display: flex;
