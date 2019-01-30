@@ -16,6 +16,7 @@
     top: -65px;
     transition: top .3s;
     width: 100%;
+    z-index: 10;
     &:hover,
     &:focus {
       top: 0;
