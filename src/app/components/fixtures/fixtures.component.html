@@ -1,0 +1,9 @@
+<div class="fixtures">
+  <h1>{{ title  }}</h1>
+  <div class="fixtures-list">
+    <div class="fixture" *ngFor="let data of teams; let i = index;">
+      <span class="fixture--teams">{{ homeTeam }} v {{ awayTeam }}</span>
+      <span class="fixture--date">{{ event_date }}</span>
+    </div>
+  </div>
+</div>

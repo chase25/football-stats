@@ -15,6 +15,7 @@ import { SecondaryNavComponent } from './components/secondary-nav/secondary-nav.
 import { DefaultLeagueTableComponent } from './components/league-table/league-table.component';
 import { AppRouter } from './app-router';
 import { TeamsComponent } from './components/teams/teams.component';
+import { FixturesComponent } from './components/fixtures/fixtures.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TeamsComponent } from './components/teams/teams.component';
     PrimaryNavComponent,
     SecondaryNavComponent,
     DefaultLeagueTableComponent,
-    TeamsComponent
+    TeamsComponent,
+    FixturesComponent
   ],
   imports: [
     AppRouter,

@@ -1,8 +1,8 @@
-<h1>All teams</h1>
+<h1>{{ title }}</h1>
 <ul class="teams-list">
-<li *ngFor="let data of table; let i = index;">
+<li *ngFor="let data of teams; let i = index;">
     <a href="/" style="background-image: url(https://www.nufc.co.uk/media/28051/club-crest-1988-present.png?width=300&height=302);">
-      {{ data.teamName }}
+      {{ data.name }}
     </a>
   </li>
 </ul>
